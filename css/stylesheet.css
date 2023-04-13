@@ -17,9 +17,11 @@ li{
 body{
     font-family: 'RocknRoll One', sans-serif;
 }
-section{
-    /* visibility: hidden; */
+.box{
+    visibility: hidden;
     text-align: left;
+    display: grid;
+    grid-template-columns: 7fr 3fr;
 }
 body{
     min-height: 100vh;
@@ -35,10 +37,6 @@ main{
 h1,
 h2{
     text-align: center;
-}
-.box{
-    display: grid;
-    grid-template-columns: 7fr 3fr;
 }
 /* The images' width and height are 25% of the viewport width */
 img{
