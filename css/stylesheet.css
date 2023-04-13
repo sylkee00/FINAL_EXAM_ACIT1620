@@ -4,7 +4,62 @@ html{
 }
 main h1{
     font-family: 'DynaPuff', cursive;
+    background-color: white;
+}
+nav ul{
+    text-align: center;
+    display:flex;
+    justify-content: space-evenly;
+}
+li{
+    list-style: none;
 }
 body{
     font-family: 'RocknRoll One', sans-serif;
+}
+section{
+    /* visibility: hidden; */
+    text-align: left;
+}
+body{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+footer{
+    margin-top: auto;
+}
+main{
+    text-align: center;
+}
+h1,
+h2{
+    text-align: center;
+}
+.box{
+    display: grid;
+    grid-template-columns: 7fr 3fr;
+}
+/* The images' width and height are 25% of the viewport width */
+img{
+    width: 25vw;
+    height: 25vw;
+}
+.wish-list{
+    background-color: white;
+    text-align: center;
+}
+.books h3{
+    grid-area: title;
+}
+/* Screens less than 640px wide */
+@media screen and (max-width: 640px){
+    nav ul{
+        text-align: center;
+        display: block;
+    }
+    .books{
+        display:grid;
+    }
+    
 }
