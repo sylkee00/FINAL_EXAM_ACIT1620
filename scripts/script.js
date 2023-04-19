@@ -27,7 +27,7 @@ document.addEventListener('DOMContentLoaded', () => {
     itemDiv.appendChild(img);
     itemDiv.appendChild(span);
     wishListSection.appendChild(itemDiv);
-    
+
     // Add the item to the wish list array
     wishList.push({ name: name });
 
@@ -40,6 +40,9 @@ document.addEventListener('DOMContentLoaded', () => {
     // Add the last-item class to the current item
     itemDiv.classList.add('last-item');
     itemDiv.style.borderBottom = '3px solid purple';
+
+    document.getElementById('hr-divider').classList.remove('hidden');
+
   }
 
 // add event listener to the books section
